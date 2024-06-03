@@ -1,0 +1,231 @@
+.main {
+    position: relative;
+    height: 100vh; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+.vid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    left: 10%;
+}
+
+.font {
+    font-size: 6em;
+    color: #f5c836;
+    animation: fadeInFromLeft 1s ease-out both;
+}
+
+.font-1 {
+    font-size: 1.25em;
+    animation: fadeInFromLeft 1s ease-out both;
+}
+
+.font-2 {
+    font-size: 1.50em;
+    color: #f7cd43;
+    animation: fadeInFromLeft 1s ease-out both;
+}
+
+.font-3 {
+    font-size: 1.80em;
+    animation: fadeInFromLeft 1s ease-out both;
+}
+
+span {
+    font-weight: normal;
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.socials {
+    margin-right: 2%;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.socials:hover {
+    opacity: 0.5;
+}
+
+.buttons {
+    padding-top: 2.5%;
+    animation: fadeInFromLeft 1.5s ease-out both;
+}
+
+button.cta span {
+    font-weight: normal; /* Ensure the text inside the button is not bold */
+}
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+  
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #ffdb65;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+  
+.cta span {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+  
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #000000;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+  
+.cta:hover:before {
+    width: 100%;
+    background: #e9cf79;
+}
+  
+.cta:hover svg {
+    transform: translateX(0);
+}
+  
+.cta:active {
+    transform: scale(0.95);
+}
+
+.social-links,
+.flex-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    animation: fadeInFromLeft 1.5s ease-out both;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.social-btn svg {
+    height: 24px;
+    width: 24px;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: 80px;
+}
+
+#linkedin svg {
+    fill: #0e76a8;
+}
+
+#github {
+    fill: #333;
+}
+  
+@media (max-width: 1000px) {
+    .content {
+        align-items: left;
+        padding-left: 5%;
+    }
+
+    .font {
+        font-size: 5em;
+    }
+
+    .font-2 {
+        font-size: 1.05em;
+    }
+
+    .font-3 {
+        font-size: 1.35em;
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        align-items: left;
+    }
+
+    .font {
+        font-size: 4em;
+    }
+
+    .font-2 {
+        font-size: 0.80em;
+    }
+}
