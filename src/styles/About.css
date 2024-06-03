@@ -1,0 +1,75 @@
+.about {
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    padding-bottom: 5%;
+}
+
+.card-info {
+	border-radius: 10px;
+	padding: 30px;
+	margin: 10px;
+	text-align: left;
+    width: 45%;
+    height: 400px;
+	display: inline-block;
+    line-height: 1.5;
+    animation: fadeInFromLeft 1.25s ease-out both;
+}
+
+.card-me {
+	border-radius: 10px;
+	padding: 50px;
+	margin: 10px;
+	text-align: center;
+	width: 45%;
+    height: 100%;
+    width: 350px;
+    height: 500x;
+	display: inline-block;
+}
+
+.card-me .card-photo {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+    animation: fadeInFromLeft 1.25s ease-out both;
+}
+
+.bruh-2 {
+    padding: 2%;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.bruh-1 {
+    margin-left: 5%;
+    font-size: 3em;
+    padding: 2%;
+    animation: fadeInFromLeft 1.25s ease-out both;
+}
+
+@media (max-width: 1000px) {
+    .card-me {
+        padding-bottom: 0px
+    }
+
+    .card-info {
+        text-align: center;
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card-me {
+        padding-bottom: 0px; /* Adjust margin for smaller screens */
+    }
+
+    .card-info {
+        text-align: center;
+        width: 60%;
+    }
+}
+
