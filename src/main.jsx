@@ -29,11 +29,11 @@ const home = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "about",
+    path: "/alanhu-website/about",
     element: <About />,
   },
   {
-    path: "projects",
+    path: "/alanhu-website/projects",
     element: <Projects />,
   },
 ]);

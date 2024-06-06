@@ -38,7 +38,7 @@ function App() {
                 <a href = "https://github.com/alhu45/"><img className = "socials" src = {github}/></a> */}
             </div>
             <div className="buttons">
-                <Link to = "/about"> 
+                <Link to = "/alanhu-website/about"> 
                     <button class="cta">
                         <span>Check me out!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
