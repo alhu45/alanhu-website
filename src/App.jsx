@@ -38,7 +38,7 @@ function App() {
                 <a href = "https://github.com/alhu45/"><img className = "socials" src = {github}/></a> */}
             </div>
             <div className="buttons">
-                <a href = "/about"> 
+                <Link to = "/about"> 
                     <button class="cta">
                         <span>Check me out!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -46,7 +46,7 @@ function App() {
                             <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
                     </button>
-                </a>
+                </Link>
             </div>
           </div>
       </div>
