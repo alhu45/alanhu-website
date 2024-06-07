@@ -1,6 +1,6 @@
 import './styles/Home.css'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-import vidBackground from './assets/background.mov'
+import vidBackground from './assets/background.mp4'
 import Navbar from './components/Navbar.jsx'
 import { Link } from "react-router-dom";
 

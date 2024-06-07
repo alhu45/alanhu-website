@@ -26,15 +26,37 @@
     width: 350px;
     height: 500x;
 	display: inline-block;
-}
-
-.card-me .card-photo {
     text-align: center;
     width: 350px;
     height: 350px;
 	border-radius: 50%;
 	margin-bottom: 10px;
     animation: fadeInFromLeft 1.25s ease-out both;
+}
+
+.card-photo {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: fadeInFromLeft 1.25s ease-out both;
+}
+
+@media (max-width: 480px) {
+    .card-photo {
+        width: 270px;
+        height: 270px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-me {
+        margin-bottom: 0%;
+        height: 270px;
+        width: 270px;
+    }
 }
 
 .bruh-2 {
@@ -84,6 +106,9 @@
     .card-info {
         text-align: center;
         width: 60%;
+    }
+    .bruh-3 {
+        padding: 10%;
     }
 }
 
