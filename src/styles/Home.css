@@ -19,7 +19,7 @@
     object-fit: cover;
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 45%;
 }
 
 @media (max-width: 390px) {
@@ -47,7 +47,7 @@ header {
 
 .font {
     font-size: 6em;
-    color: #4967ed;
+    color: #1F8AFF;
     animation: fadeInFromLeft 1s ease-out both;
 }
 
@@ -58,7 +58,7 @@ header {
 
 .font-2 {
     font-size: 1.50em;
-    color: #546ee2;
+    color: #3BC2FF;
     animation: fadeInFromLeft 1s ease-out both;
 }
 
@@ -118,7 +118,7 @@ button.cta span {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #a0abed;
+    background: #7AB8FD;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -147,7 +147,7 @@ button.cta span {
   
 .cta:hover:before {
     width: 100%;
-    background: #7587ff;
+    background: #3BC2FF;
 }
   
 .cta:hover svg {
