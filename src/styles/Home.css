@@ -13,6 +13,20 @@
     top: 0;
     left: 0;
 }
+
+.background-image {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
+
+@media (max-width: 390px) {
+    .background-image {
+        left: 80%;
+    }
+}
 header {
     position: relative;
     width: 100%;
@@ -33,7 +47,7 @@ header {
 
 .font {
     font-size: 6em;
-    color: #f5c836;
+    color: #4967ed;
     animation: fadeInFromLeft 1s ease-out both;
 }
 
@@ -44,7 +58,7 @@ header {
 
 .font-2 {
     font-size: 1.50em;
-    color: #f7cd43;
+    color: #546ee2;
     animation: fadeInFromLeft 1s ease-out both;
 }
 
@@ -104,7 +118,7 @@ button.cta span {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #ffdb65;
+    background: #a0abed;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -133,7 +147,7 @@ button.cta span {
   
 .cta:hover:before {
     width: 100%;
-    background: #e9cf79;
+    background: #7587ff;
 }
   
 .cta:hover svg {
@@ -197,7 +211,7 @@ button.cta span {
     fill: #333;
 }
   
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .content {
         align-items: left;
         padding-left: 5%;
@@ -216,7 +230,7 @@ button.cta span {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .content {
         align-items: left;
     }
@@ -227,5 +241,19 @@ button.cta span {
 
     .font-2 {
         font-size: 0.70em;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        align-items: left;
+    }
+
+    .font {
+        font-size: 4em;
+    }
+
+    .font-2 {
+        font-size: 9px;
     }
 }
