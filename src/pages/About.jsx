@@ -44,7 +44,7 @@ function About() {
             </div>
             <div className="card-info">
               <h2 className="bruh-2"> 
-                Hi! My name is Alan and I am currently a third year Computer Engineering student at Queen's University.
+                Hello! I'm Alan and currently a third year Computer Engineering student at Queen's University.
                 My primary interest lies in backend development, particularly in areas related to data management and 
                 cybersecurity. I am motivated to deepen my understanding of data pipelines and explore effective methods to 
                 safeguard data.
