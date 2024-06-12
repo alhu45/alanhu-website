@@ -54,7 +54,7 @@ function About() {
                 enjoying nature, and collecting shoes. Feel free to check out my page!
               </h2>
               <div className="buttons">
-                <Link to="/alanhu-website/projects"> 
+                <Link to="/projects"> 
                     <button className="cta">
                         <span>My Projects!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">

@@ -15,9 +15,9 @@ function Navbar() {
     <>
       <header>
         <nav ref={navRef}>
-          <Link to="/alanhu-website" exact>Home</Link>
-          <Link to="/alanhu-website/about">About</Link>
-          <Link to="/alanhu-website/projects">Projects</Link>
+          <Link to="/" exact>Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
           <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>
             <FaTimes />

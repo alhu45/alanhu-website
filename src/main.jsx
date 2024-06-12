@@ -11,15 +11,15 @@ import './index.css'
 
 const home = createBrowserRouter([
   {
-    path: "/alanhu-website/",
+    path: "/",
     element: <App />,
   },
   {
-    path: "/alanhu-website/about",
+    path: "/about",
     element: <About />,
   },
   {
-    path: "/alanhu-website/projects",
+    path: "/projects",
     element: <Projects />,
   },
 ]);
