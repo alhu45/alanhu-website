@@ -44,14 +44,14 @@ function About() {
             </div>
             <div className="card-info">
               <h2 className="bruh-2"> 
-                Hi! My name is Alan and I am currently a second year Computer Engineering student at Queen's University.
+                Hi! My name is Alan and I am currently a third year Computer Engineering student at Queen's University.
                 My primary interest lies in backend development, particularly in areas related to data management and 
                 cybersecurity. I am motivated to deepen my understanding of data pipelines and explore effective methods to 
                 safeguard data.
               </h2>
               <h2 className="bruh-2">
-                Apart from my technical interests, I have a passion for running, working out, playing basketball, hiking, 
-                enjoying nature, and collecting shoes. Feel free to check out my page!
+                Apart from my technical interests, I have a passion for running, gym, 
+                basketball, hiking, and enjoying nature. Feel free to check out my page!
               </h2>
               <div className="buttons">
                 <Link to="/projects"> 
@@ -66,7 +66,7 @@ function About() {
               </div>
             </div>
           </center>
-          <h1 ref={bruh1Ref} className="bruh-3">What I worked with!</h1>
+          <h1 ref={bruh1Ref} className="bruh-3">My Current Tech Stack!</h1>
           <Coding />
         </div>
     </>
