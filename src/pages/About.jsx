@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar.jsx'
-import me from '../assets/me.png'
+import me from '../assets/mountains.png'
 import Coding from '../components/Coding.jsx'
 import '../styles/About.css'
 import { Link } from 'react-router-dom';
