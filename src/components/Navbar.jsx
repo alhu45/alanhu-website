@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/Navbar.css';
-import Resume from '../assets/alan_hu_resume_copy.pdf';
+import Resume from '../assets/alan_hu_resume.pdf';
 
 function Navbar() {
   const navRef = useRef();
