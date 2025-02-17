@@ -6,6 +6,8 @@ import walkJump from '../assets/walkorjump.png'
 import app from '../assets/elec290.png'
 import pacman from '../assets/pacman.png'
 import excel from '../assets/excel.png'
+import crime from '../assets/TorontoCrime.png'
+import instarecipe from '../assets/InstaRecipe.png'
 
 function Projects() {
   const projectRefs = useRef([]);
@@ -53,13 +55,53 @@ function Projects() {
           </div>
 
           <div ref={el => projectRefs.current[0] = el} className="project">
+            <h1>See More of My Projects on GitHub!</h1>
+            <div className="buttons">
+              <a href="https://github.com/alhu45"> 
+                <button className="cta">
+                  <span>Click Here</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div ref={el => projectRefs.current[1] = el} className="project">
+            <h1>Toronto Crime Rate</h1>
+            <p>
+            Toronto Crime Rate website that allows users to interact with a dynamic map showcasing crime data 
+            in Toronto from 2014 to the present.
+            </p>
+            <div className="image-me">
+              <img className="card-image" src={crime} alt="video" autoPlay loop muted />
+            </div>
+            <div className="buttons">
+              <a href="https://github.com/alhu45/Toronto-Crime-Website"> 
+                <button className="cta">
+                  <span>Check it out!</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div ref={el => projectRefs.current[2] = el} className="project">
             <h1>InstaRecipe</h1>
             <p>
               InstaRecipe is a website where users can upload pictures of ingredients they have, and in turn, 
               they will be given a recipe that is generated based on the classified ingredients.
             </p>
-            <div className="video-me">
+            {/* <div className="video-me">
               <video className="card-video" src={instaVideo} alt="video" autoPlay loop muted />
+            </div> */}
+            <div className="image-me">
+              <img className="card-image" src={instarecipe} alt="video" autoPlay loop muted />
             </div>
             <div className="buttons">
               <a href="https://github.com/alhu45/InstaRecipe?tab=readme-ov-file"> 
@@ -74,7 +116,7 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[1] = el} className="project">
+          <div ref={el => projectRefs.current[3] = el} className="project">
             <h1>Jumping or Walking Prediction Model</h1>
             <p>
               Designed a desktop app to distinguish whether a dataset was jumping data or walking data.
@@ -95,7 +137,7 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[2] = el} className="project">
+          <div ref={el => projectRefs.current[4] = el} className="project">
             <h1>Pacman Game</h1>
             <p>
               Created a Pacman game where the player controls Pacman through a maze while avoiding ghosts. 
@@ -117,7 +159,7 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[3] = el} className="project">
+          <div ref={el => projectRefs.current[5] = el} className="project">
             <h1>Posture Corrector App</h1>
             <p>
               An android app that uses Arduino and a gyroscope to detect the user's bad posture. Through the app, sends notifications to
@@ -139,7 +181,7 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[4] = el} className="project">
+          <div ref={el => projectRefs.current[6] = el} className="project">
             <h1>Excel Spreadsheet</h1>
             <p>
               Using data structures and algorithms, mimicked the functionality of excel spreadsheet.
