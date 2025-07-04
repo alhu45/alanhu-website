@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../components/Card.jsx'
+import Card from './DevOpsCards.jsx'
 
 function Coding() {
   return (
@@ -10,3 +10,4 @@ function Coding() {
 }
 
 export default Coding
+ 

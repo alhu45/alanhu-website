@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar.jsx'
 import me from '../assets/mountains.png'
-import Coding from '../components/Coding.jsx'
+import Frontend from '../components/Frontend.jsx'
+import Backend from '../components/Backend.jsx'
+import DevOps from '../components/DevOps.jsx'
+import Business from '../components/Business.jsx'
 import Experience from '../components/Experience.jsx'
 import '../styles/About.css'
 import { Link } from 'react-router-dom';
@@ -46,15 +49,15 @@ function About() {
           </div>
           <div className="card-info">
             <h2 className="bruh-2"> 
-              Hello! I'm Alan, a third-year Computer Engineering student at Queen's University with a deep passion 
-              for all things software. While I have a strong interest in backend development, particularly in 
-              data engineering and cybersecurity, I am eager to explore the broader field of software engineering.
+            Hello! I'm Alan, a Computer Engineering student at Queen's University, 
+            currently navigating my third year while exploring the exciting intersection of software innovation and business strategy. Fueled by curiosity and creativity, 
+            I thrive on turning bold ideas into impactful solutions.
             </h2>
-            <h2 className="bruh-2">
-              I believe in continuously improving by embracing new experiences, learning from my mistakes, and pushing myself outside my 
-              comfort zone. Beyond technology, I am also interested in consulting and business, as I enjoy solving complex 
-              problems, working with teams, and understanding how technical solutions drive real-world impact. Feel free to check out my page!
+            <h2 className="bruh-2"> 
+            I'm deeply passionate about software development, particularly in the realm of data engineering, where I love transforming complex data into meaningful insights. Alongside my technical interests, 
+            I'm enthusiastic about consulting and engaging with people, finding joy in collaboration, communication, and building connections that drive projects forward.
             </h2>
+
             <div className="buttons">
               <Link to="/projects"> 
                 <button className="cta">
@@ -72,8 +75,15 @@ function About() {
         <h1 ref={(el) => sectionRefs.current[1] = el} className="bruh-3">Experience</h1>
         <Experience />
 
-        <h1 ref={(el) => sectionRefs.current[2] = el} className="bruh-3">Some of My Current Tech Stack!</h1>
-        <Coding />
+        <h1 ref={(el) => sectionRefs.current[2] = el} className="bruh-3">Skills and Technologies</h1>
+        <h2 ref={(el) => sectionRefs.current[3] = el} className="bruh-4">Frontend</h2>
+        <Frontend />
+        <h2 ref={(el) => sectionRefs.current[4] = el} className="bruh-4">Backend</h2>
+        <Backend />
+        <h2 ref={(el) => sectionRefs.current[5] = el} className="bruh-4">DevOps, Cloud, and Data</h2>
+        <DevOps />
+        <h2 ref={(el) => sectionRefs.current[6] = el} className="bruh-4">Business Intelligence & Analytics</h2>
+        <Business />
       </div>
     </>
   )

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/ExperienceCard.css';
 import Speer from '../assets/Speer.jpeg';
+import Hydro from '../assets/hydro.png';
 
 import { useEffect } from 'react';
 
@@ -33,18 +34,29 @@ function Experience(){
             <>
                 <center>
                     <div className = "cardExp">
+                        <img className = "cardExp-image" src = { Hydro } alt = "Hydro One"></img>
+                        <p className = "cardExp-title">Hydro One</p>
+                        <p className = "cardExp-pos">Physical Security Engineer Co-Op</p>
+                        <p className = "cardExp-time">May 2025 to Present</p>
+                        <p className = "cardExp-text">
+                            
+                        </p>
+                    </div>
+                    <div className = "cardExp">
                         <img className = "cardExp-image" src = { Speer } alt = "Speer"></img>
                         <p className = "cardExp-title">Speer Technologies</p>
                         <p className = "cardExp-pos">Full-Stack Engineer Intern</p>
                         <p className = "cardExp-time">June 2024 to Sept 2024</p>
-                        <p className = "cardExp-text">
+                        {/* <p className = "cardExp-text">
+                            Helped develop a Slack Bot to automate tickets for optimal workflow.
                             Assisted in building developing and deploying full-stack web applications using Next.js.
                             Developed responsive UI components and integrated them with backend APIs.
                             Met with clients to discuss project requirements, gather feedback, and ensure alignment with business goals.
                             Collaborated with senior developers to troubleshoot and resolve bugs.
-                        </p>
+                        </p> */}
                     </div>
                 </center>
+                
             </>   
 		);
 }

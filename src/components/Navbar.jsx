@@ -16,7 +16,7 @@ function Navbar() {
       <header>
         <nav ref={navRef}>
           <Link to="/" exact>Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/about">Experience</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>

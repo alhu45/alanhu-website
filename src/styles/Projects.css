@@ -216,3 +216,45 @@
     box-shadow: -190px 0 #272727, 170px 0 #272727;
   }
 }
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* space between tags */
+  margin-top: 8px;
+}
+
+.tech-tags span {
+  background-color: #3791f2; /* dark background */
+  color: white; /* white text */
+  padding: 6px 12px;
+  border-radius: 20px; /* pill shape */
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  user-select: none;
+  cursor: default;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2); /* subtle glow */
+  transition: background-color 0.3s ease;
+}
+
+.tech-tags span:hover {
+  background-color: #6eaaeb; /* lighter on hover */
+}
+
+.tech-stack {
+  text-align: center; 
+  margin-top: 16px;
+}
+
+.tech-stack h4 {
+  margin-bottom: 8px;
+}
+
+.tech-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;  
+}

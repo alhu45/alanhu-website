@@ -5,9 +5,11 @@ import Flask from '../assets/Flask.png';
 import Git from '../assets/Git.png';
 import Java from '../assets/Java.webp';
 import JS from '../assets/JS.png';
-import Python from '../assets/Python.png';
+import TS from '../assets/typescript.png';
 import ReactLogo from '../assets/React.png';
+import nextjs from '../assets/nextjs-icon.svg';
 import MySQL from '../assets/SQL.png'
+import Vite from '../assets/vite.png'
 import { useEffect } from 'react';
 
 function Card(){
@@ -39,37 +41,25 @@ function Card(){
             <>
                 <center>
                     <div className = "card">
-                        <img className = "card-image" src = { C } alt = "C"></img>
-                        <p className = "card-title">C</p>
-                    </div>
-                    <div className = "card">
-                        <img className = "card-image" src = { Python } alt = "Python"></img>
-                        <p className = "card-title">Python</p>
-                    </div>
-                    <div className = "card">
-                        <img className = "card-image" src = { Java } alt = "Java"></img>
-                        <p className = "card-title">Java</p>
-                    </div>
-                    <div className = "card">
-                        <img className = "card-image" src = { MySQL } alt = "MySQL"></img>
-                        <p className = "card-title">MySQL</p>
-                    </div>
-                    <div className = "card">
-                        <img className = "card-image" src = { Flask } alt = "Flask"></img>
-                        <p className = "card-title">Flask</p>
-                    </div>
-                    <div className = "card">
                         <img className = "card-image" src = { ReactLogo } alt = "React"></img>
-                        <p className = "card-title">React</p>
+                        <p className = "card-title">React.js</p>
+                    </div>
+                    <div className = "card">
+                        <img className = "card-image" src = { TS } alt = "ts"></img>
+                        <p className = "card-title">Typescript</p>
+                    </div>
+                    <div className = "card">
+                        <img className = "card-image" src = { nextjs } alt = "nextjs"></img>
+                        <p className = "card-title">Next.js</p>
+                    </div>
+                    <div className = "card">
+                        <img className = "card-image" src = { Vite } alt = "vitejs"></img>
+                        <p className = "card-title">Vite.js</p>
                     </div>
                     <div className = "card">
                         <img className = "card-image" src = { JS } alt = "JS"></img>
-                        <p className = "card-title">JS</p>
-                    </div>
-                    <div className = "card">
-                        <img className = "card-image" src = { Git } alt = "Git"></img>
-                        <p className = "card-title">Git</p>
-                    </div>
+                        <p className = "card-title">HTML/CSS/JS</p>
+                    </div>                    
                 </center>
             </>   
 		);

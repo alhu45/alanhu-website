@@ -8,6 +8,7 @@ import pacman from '../assets/pacman.png'
 import excel from '../assets/excel.png'
 import crime from '../assets/TorontoCrime.png'
 import instarecipe from '../assets/InstaRecipe.png'
+import ttc from '../assets/ttc_msg.png'
 
 function Projects() {
   const projectRefs = useRef([]);
@@ -69,12 +70,54 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[1] = el} className="project">
+          <div ref={el => projectRefs.current[2] = el} className="project">
+            <h1>TTC Delay System</h1>
+            <p>
+              TTC Alert System where users can send a message to receive the latest TTC delay at that time.
+            </p>
+            <div className="tech-stack">
+              <div className="tech-tags">
+                <span>Flask</span>
+                <span>Apache Kafka</span>
+                <span>Apache Spark</span>
+                <span>MongoDB Atlas</span>
+                <span>Twilio API</span>
+                <span>Docker</span>
+                <span>AWS EC2</span>
+              </div>
+            </div>
+            <div className="image-me">
+              <img className="card-image" src={ttc} alt="video" autoPlay loop muted />
+            </div>
+            <div className="buttons">
+              <a href="https://github.com/alhu45/TTC-Alert"> 
+                <button className="cta">
+                  <span>Check it out!</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+
+          <div ref={el => projectRefs.current[3] = el} className="project">
             <h1>Toronto Crime Rate</h1>
             <p>
             Toronto Crime Rate website that allows users to interact with a dynamic map showcasing crime data 
             in Toronto from 2014 to the present.
             </p>
+            <div className="tech-stack">
+              <div className="tech-tags">
+                <span>PySpark</span>
+                <span>MySQL</span>
+                <span>Tableau</span>
+                <span>PowerBI</span>
+                <span>React.js</span>
+              </div>
+            </div>
             <div className="image-me">
               <img className="card-image" src={crime} alt="video" autoPlay loop muted />
             </div>
@@ -91,106 +134,26 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[2] = el} className="project">
+          <div ref={el => projectRefs.current[4] = el} className="project">
             <h1>InstaRecipe</h1>
             <p>
               InstaRecipe is a website where users can upload pictures of ingredients they have, and in turn, 
               they will be given a recipe that is generated based on the classified ingredients.
             </p>
-            {/* <div className="video-me">
-              <video className="card-video" src={instaVideo} alt="video" autoPlay loop muted />
-            </div> */}
+            <div className="tech-stack">
+              <div className="tech-tags">
+                <span>Pre-Trained ML</span>
+                <span>Auth0</span>
+                <span>Spoonacular API</span>
+                <span>Flask</span>
+                <span>React.js</span>
+              </div>
+            </div>
             <div className="image-me">
               <img className="card-image" src={instarecipe} alt="video" autoPlay loop muted />
             </div>
             <div className="buttons">
               <a href="https://github.com/alhu45/InstaRecipe?tab=readme-ov-file"> 
-                <button className="cta">
-                  <span>Check it out!</span>
-                  <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div ref={el => projectRefs.current[3] = el} className="project">
-            <h1>Jumping or Walking Prediction Model</h1>
-            <p>
-              Designed a desktop app to distinguish whether a dataset was jumping data or walking data.
-            </p>
-            <div className="image-me">
-              <img className="card-image" src={walkJump} alt="video" autoPlay loop muted />
-            </div>
-            <div className="buttons">
-              <a href="https://github.com/alhu45/logistical-regression-walkjump-app"> 
-                <button className="cta">
-                  <span>Check it out!</span>
-                  <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div ref={el => projectRefs.current[4] = el} className="project">
-            <h1>Pacman Game</h1>
-            <p>
-              Created a Pacman game where the player controls Pacman through a maze while avoiding ghosts. 
-              Reads the map from a text file which is then manipulated using C code.
-            </p>
-            <div className="image-me">
-              <img className="card-image" src={pacman} alt="video" autoPlay loop muted />
-            </div>
-            <div className="buttons">
-              <a href="https://github.com/alhu45/pacman-game"> 
-                <button className="cta">
-                  <span>Check it out!</span>
-                  <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div ref={el => projectRefs.current[5] = el} className="project">
-            <h1>Posture Corrector App</h1>
-            <p>
-              An android app that uses Arduino and a gyroscope to detect the user's bad posture. Through the app, sends notifications to
-              user to fix their posture.
-            </p>
-            <div className="image-me">
-              <img className="card-image" src={app} alt="video" autoPlay loop muted />
-            </div>
-            <div className="buttons">
-              <a href="https://github.com/alhu45/posture-app"> 
-                <button className="cta">
-                  <span>Check it out!</span>
-                  <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div ref={el => projectRefs.current[6] = el} className="project">
-            <h1>Excel Spreadsheet</h1>
-            <p>
-              Using data structures and algorithms, mimicked the functionality of excel spreadsheet.
-            </p>
-            <div className="image-me">
-              <img className="card-image" src={excel} alt="video" autoPlay loop muted />
-            </div>
-            <div className="buttons">
-              <a href="https://github.com/alhu45/excel-spreadsheet"> 
                 <button className="cta">
                   <span>Check it out!</span>
                   <svg width="15px" height="10px" viewBox="0 0 13 10">
