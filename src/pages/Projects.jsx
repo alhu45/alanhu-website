@@ -8,6 +8,7 @@ import pacman from '../assets/pacman.png'
 import excel from '../assets/excel.png'
 import crime from '../assets/TorontoCrime.png'
 import instarecipe from '../assets/InstaRecipe.png'
+import heatmap from '../assets/Heatmap.png'
 import ttc from '../assets/ttc_msg.png'
 
 function Projects() {
@@ -70,10 +71,51 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={el => projectRefs.current[2] = el} className="project">
-            <h1>TTC Delay System</h1>
+        <div ref={el => projectRefs.current[2] = el} className="project">
+            <h1>Transit Ridership Heatmap</h1>
             <p>
-              TTC Alert System where users can send a message to receive the latest TTC delay at that time.
+              TTC Transit Ridership Map, letting users tell how busy a TTC Subway station is at anytime!
+            </p>
+            <div className="tech-stack">
+              <div className="tech-tags">
+                <span>Custom API</span>
+                <span>XGBoost AI Model</span>
+                <span>ETL Pipeline</span>
+                <span>Feature Engineering</span>
+                <span>Terraform</span>
+                <span>Docker</span>
+                <span>Full-Stack</span>
+              </div>
+            </div>
+            <div className="image-me">
+              <img className="card-image" src={heatmap} alt="video" autoPlay loop muted />
+            </div>
+            <div className="buttons">
+              <a href="https://github.com/alhu45/TTC-Alert"> 
+                <button className="cta">
+                  <span>Demo Website</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+              </a>
+              <a href="https://github.com/alhu45/TTC-Alert"> 
+                <button className="cta">
+                  <span>Check it out!</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div ref={el => projectRefs.current[2] = el} className="project">
+            <h1>TTC Delay Notification</h1>
+            <p>
+              TTC Alert Notification System where users can send a message a number and receive the latest TTC delay at that time.
             </p>
             <div className="tech-stack">
               <div className="tech-tags">
@@ -101,7 +143,6 @@ function Projects() {
               </a>
             </div>
           </div>
-
 
           <div ref={el => projectRefs.current[3] = el} className="project">
             <h1>Toronto Crime Rate</h1>

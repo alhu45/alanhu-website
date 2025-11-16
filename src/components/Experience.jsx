@@ -36,7 +36,7 @@ function Experience(){
                     <div className = "cardExp">
                         <img className = "cardExp-image" src = { Hydro } alt = "Hydro One"></img>
                         <p className = "cardExp-title">Hydro One</p>
-                        <p className = "cardExp-pos">Physical Security Engineer Co-Op</p>
+                        <p className = "cardExp-pos">Security Engineer Co-Op</p>
                         <p className = "cardExp-time">May 2025 to Present</p>
                         <p className = "cardExp-text">
                             
