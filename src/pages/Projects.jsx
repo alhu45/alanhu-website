@@ -71,7 +71,7 @@ function Projects() {
             </div>
           </div>
 
-        <div ref={el => projectRefs.current[2] = el} className="project">
+          <div ref={el => projectRefs.current[1] = el} className="project">
             <h1>Transit Ridership Heatmap</h1>
             <p>
               TTC Transit Ridership Map, letting users tell how busy a TTC Subway station is at anytime!
