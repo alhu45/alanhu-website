@@ -36,7 +36,7 @@ function Experience(){
                     <div className = "cardExp">
                         <img className = "cardExp-image" src = { Hydro } alt = "Hydro One"></img>
                         <p className = "cardExp-title">Hydro One</p>
-                        <p className = "cardExp-pos">Security Engineer Co-Op</p>
+                        <p className = "cardExp-pos">Data Engineer Co-Op</p>
                         <p className = "cardExp-time">May 2025 to Present</p>
                         <p className = "cardExp-text">
                             
@@ -45,7 +45,7 @@ function Experience(){
                     <div className = "cardExp">
                         <img className = "cardExp-image" src = { Speer } alt = "Speer"></img>
                         <p className = "cardExp-title">Speer Technologies</p>
-                        <p className = "cardExp-pos">Full-Stack Engineer Intern</p>
+                        <p className = "cardExp-pos">AI Full-Stack Engineer Intern</p>
                         <p className = "cardExp-time">June 2024 to Sept 2024</p>
                         {/* <p className = "cardExp-text">
                             Helped develop a Slack Bot to automate tickets for optimal workflow.

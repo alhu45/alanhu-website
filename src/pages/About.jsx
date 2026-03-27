@@ -49,13 +49,10 @@ function About() {
           </div>
           <div className="card-info">
             <h2 className="bruh-2"> 
-            Hello! I'm Alan, a Computer Engineering student at Queen's University, 
-            currently navigating my third year while exploring the exciting intersection of software innovation and business strategy. Fueled by curiosity and creativity, 
-            I thrive on turning bold ideas into impactful solutions.
+              Hello! I'm Alan, a Computer Engineering student at Queen’s University with hands-on experience building end-to-end data and AI systems. I’m passionate about data engineering and machine learning, with a focus on developing scalable pipelines, real-time ML systems, and LLM-powered applications that turn complex data into actionable insights.
             </h2>
             <h2 className="bruh-2"> 
-            I'm deeply passionate about software development, particularly in the realm of data engineering, where I love transforming complex data into meaningful insights. Alongside my technical interests, 
-            I'm enthusiastic about consulting and engaging with people, finding joy in collaboration, communication, and building connections that drive projects forward.
+              Through my work, I’ve designed systems ranging from large-scale ETL pipelines to AI-driven tools that enable smarter decision-making. I enjoy bridging technical development with real-world impact, and I’m especially interested in roles that combine software, data, and strategy.
             </h2>
 
             <div className="buttons">
@@ -75,7 +72,7 @@ function About() {
         <h1 ref={(el) => sectionRefs.current[1] = el} className="bruh-3">Experience</h1>
         <Experience />
 
-        <h1 ref={(el) => sectionRefs.current[2] = el} className="bruh-3">Skills and Technologies</h1>
+        {/* <h1 ref={(el) => sectionRefs.current[2] = el} className="bruh-3">Skills and Technologies</h1>
         <h2 ref={(el) => sectionRefs.current[3] = el} className="bruh-4">Frontend</h2>
         <Frontend />
         <h2 ref={(el) => sectionRefs.current[4] = el} className="bruh-4">Backend</h2>
@@ -83,7 +80,7 @@ function About() {
         <h2 ref={(el) => sectionRefs.current[5] = el} className="bruh-4">DevOps, Cloud, and Data</h2>
         <DevOps />
         <h2 ref={(el) => sectionRefs.current[6] = el} className="bruh-4">Business Intelligence & Analytics</h2>
-        <Business />
+        <Business /> */}
       </div>
     </>
   )
