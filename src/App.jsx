@@ -1,7 +1,7 @@
 import './styles/Home.css'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import background from './assets/mount.jpg'
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/Navbar1.jsx'
 import { Link } from "react-router-dom";
 import { useEffect } from 'react'
 

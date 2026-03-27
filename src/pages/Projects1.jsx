@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import Navbar from '../components/Navbar.jsx'
+import Navbar from '../components/Navbar1.jsx'
 import '../styles/Projects1.css'
 import walkJump from '../assets/walkorjump.png'
 import app from '../assets/elec290.png'

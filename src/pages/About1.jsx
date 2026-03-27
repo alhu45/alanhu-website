@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import Navbar from '../components/Navbar.jsx'
+import Navbar from '../components/Navbar1.jsx'
 import me from '../assets/mountains.png'
 import Speer from '../assets/Speer.jpeg';
 import Hydro from '../assets/hydro.png';

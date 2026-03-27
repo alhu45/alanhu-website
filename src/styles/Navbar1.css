@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #3BC2FF;
+  --secondaryColor: #1F8AFF;
+  --textColor: black;
+  --drawer-width: 280px;
+  --speed: 0.35s;
+}
+
+/* ── Desktop header ── */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 72px;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Desktop links */
+header nav {
+  display: flex;
+}
+
+header nav a {
+  margin: 0 1.5rem;
+  color: var(--textColor);
+  text-decoration: none;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  transition: width 0.25s ease;
+}
+
+header nav a:hover::after { width: 100%; }
+header nav a:hover { color: var(--secondaryColor); }
+
+/* Hamburger — hidden on desktop */
+.hamburger {
+  display: none;
+  padding: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Backdrop ── */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 200;
+  pointer-events: none;
+  transition: background var(--speed) ease;
+}
+
+.nav-backdrop.active {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ── Drawer ── */
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: var(--drawer-width);
+  max-width: 85vw;
+  background-color: var(--mainColor);
+  box-shadow: -6px 0 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 2.5rem 3rem;
+  z-index: 300;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition:
+    transform var(--speed) cubic-bezier(0.4, 0, 0.2, 1),
+    visibility var(--speed);
+}
+
+.nav-drawer.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* Drawer links */
+.nav-drawer a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s ease;
+}
+
+.nav-drawer a:last-of-type {
+  border-bottom: none;
+}
+
+.nav-drawer a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Stagger links in when open */
+.nav-drawer.open a:nth-child(2) { opacity: 1; transform: translateX(0); transition-delay: 0.08s; }
+.nav-drawer.open a:nth-child(3) { opacity: 1; transform: translateX(0); transition-delay: 0.15s; }
+.nav-drawer.open a:nth-child(4) { opacity: 1; transform: translateX(0); transition-delay: 0.22s; }
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+/* ── Mobile ── */
+@media only screen and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
