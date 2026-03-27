@@ -70,9 +70,9 @@ function About() {
         </center>
         {/* Multiple refs for headings */}
         <h1 ref={(el) => sectionRefs.current[1] = el} className="bruh-3">Experience</h1>
-        <Experience />
+        {/* <Experience />
 
-        {/* <h1 ref={(el) => sectionRefs.current[2] = el} className="bruh-3">Skills and Technologies</h1>
+        <h1 ref={(el) => sectionRefs.current[2] = el} className="bruh-3">Skills and Technologies</h1>
         <h2 ref={(el) => sectionRefs.current[3] = el} className="bruh-4">Frontend</h2>
         <Frontend />
         <h2 ref={(el) => sectionRefs.current[4] = el} className="bruh-4">Backend</h2>
