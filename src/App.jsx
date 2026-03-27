@@ -1,7 +1,6 @@
 import './styles/Home.css'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-import vidBackground from './assets/background.mp4'
-import background from './assets/wp8063327.jpg'
+import background from './assets/mount.jpg'
 import Navbar from './components/Navbar.jsx'
 import { Link } from "react-router-dom";
 
@@ -16,7 +15,6 @@ function App() {
   return (
     <>  
       <div className = "main">
-      {/* <video className = "vid-image" src = {vidBackground} autoPlay loop muted/> */}
       <img className = "background-image" src = {background}/>
       <Navbar />
         <div className = "content">
