@@ -12,6 +12,10 @@
 }
 
 header {
+  position: fixed; /* added: prevents navbar from pushing page content around */
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -19,6 +23,7 @@ header {
   padding: 0 2rem;
   background-color: transparent;
   color: var(--textColor);
+  z-index: 100; /* sits above page content, below the mobile nav overlay (999) */
 }
 
 nav a {
@@ -62,9 +67,10 @@ header .nav-btn {
     justify-content: center;
     gap: 1.5rem;
     background-color: var(--mainColor);
-    transition: transform 0.4s ease; /* was: transition: 1s — too slow & unspecified property */
-    transform: translateY(-100vh);
-    z-index: 999; /* added: ensures the nav overlay sits above all page content */
+    transition: transform 0.4s ease;
+    transform: translateY(-100%); /* was: -100vh — causes blue bleed on mobile browsers with dynamic toolbars */
+    overflow: hidden; /* prevents background color bleeding outside bounds during animation */
+    z-index: 999;
   }
 
   header .responsive_nav {
