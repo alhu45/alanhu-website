@@ -23,8 +23,7 @@
     flex-direction: row;
     align-items: center;
     gap: 52px;
-    /* Reduced padding: 32px top, 40px bottom (was 64px and 72px) */
-    padding: 2px 0 40px; 
+    padding: 2px 0 40px;
     animation: fadeInFromBottom 1.25s ease-out both;
 }
 
@@ -74,7 +73,7 @@
 .tag {
     font-size: 0.7em;
     font-weight: 500;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     padding: 3px 10px;
     border-radius: 20px;
     border: 1px solid #1F8AFF;
@@ -87,7 +86,7 @@
     font-size: 1em;
     line-height: 1.8;
     margin-bottom: 10px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 /* ── Button ── */
@@ -133,7 +132,9 @@
     padding: 24px 28px;
     border: 1px solid rgba(128, 128, 128, 0.18);
     border-radius: 14px;
-    width: calc(40% - 10px);
+    flex: 1 1 calc(50% - 8px);
+    min-width: 280px;
+    box-sizing: border-box;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -163,6 +164,7 @@
 
 .exp-body {
     min-width: 0;
+    flex: 1;
 }
 
 .exp-role {
@@ -187,18 +189,45 @@
     letter-spacing: 0.02em;
 }
 
-/* ── Responsive ── */
+/* ── Tablet ── */
+@media (max-width: 900px) {
+    .hero {
+        gap: 32px;
+    }
+
+    .exp-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+/* ── Mobile ── */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 2px;
-        padding: 0px 0;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .hero-image-wrap {
+        margin-bottom: 4px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-eyebrow {
+        margin-top: 0;
     }
 
     .tag-row {
         justify-content: center;
+        margin-top: 8px;
     }
 
     .btn-row {
@@ -206,12 +235,24 @@
         justify-content: center;
     }
 
+    .exp-grid {
+        gap: 12px;
+    }
+
     .exp-card {
         width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+        padding: 20px;
     }
 }
 
+/* ── Small mobile ── */
 @media (max-width: 480px) {
+    .page-container {
+        padding: 0 16px;
+    }
+
     .hero-photo {
         width: 160px;
         height: 160px;
@@ -223,5 +264,23 @@
 
     .section-title {
         font-size: 2.2em;
+    }
+
+    .exp-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .exp-logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .exp-role {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
     }
 }
