@@ -3,8 +3,16 @@ import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import background from './assets/mount.jpg'
 import Navbar from './components/Navbar.jsx'
 import { Link } from "react-router-dom";
+import { useEffect } from 'react'
 
 function App() {
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, []);
+
   const [typeEffect] = useTypewriter({
     words: ['printf("Hello World!");', 'System.out.println("Hello World!");', 'print("Hello World!")'],
     loop: {},
