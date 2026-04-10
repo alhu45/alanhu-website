@@ -53,7 +53,7 @@ const projects = [
       'Real-Time Systems'
     ],
     links: [
-      { label: 'GitHub', href: 'https://github.com/alhu45/TTC-Alert' },
+      { label: 'GitHub', href: 'https://github.com/alhu45/390' },
     ],
   },
   {
