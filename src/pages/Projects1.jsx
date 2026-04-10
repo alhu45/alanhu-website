@@ -9,8 +9,21 @@ import crime from '../assets/TorontoCrime.png'
 import instarecipe from '../assets/InstaRecipe.png'
 import heatmap from '../assets/ridership.png'
 import ttc from '../assets/ttc_msg.png'
+import vancouver from '../assets/Vancouver_neighbourhoods.jpg'
+import car from '../assets/car.png'
 
 const projects = [
+  {
+    title: 'Vancouver Livability',
+    description:
+      'Built an end-to-end data engineering and analytics pipeline to evaluate livability across neighborhoods in Vancouver.',
+    image: vancouver,
+    tags: ['Python', 'dbt', 'ML Models', 'ELT Pipeline', 'SQL', 'Snowflake', 'Databricks', 'Terraform', 'Data Warehousing & Modeling', 'AWS S3/EC2', 'Medallion Architecture', 'Geospatial Analysis'],
+    links: [
+      { label: 'Demo Website', href: 'https://github.com/alhu45/Vancouver-Housing' },
+      { label: 'GitHub', href: 'https://github.com/alhu45/Vancouver-Housing' },
+    ],
+  },
   {
     title: 'Transit Ridership Heatmap',
     description:
@@ -19,6 +32,27 @@ const projects = [
     tags: ['Custom API', 'XGBoost AI Model', 'ETL Pipeline', 'Feature Engineering', 'Terraform', 'Docker', 'Full-Stack'],
     links: [
       { label: 'Demo Website', href: 'https://github.com/alhu45/TTC-Alert' },
+      { label: 'GitHub', href: 'https://github.com/alhu45/TTC-Alert' },
+    ],
+  },
+  {
+    title: 'AI-Powered Self-Driving Taxi',
+    description:
+      'Built and integrated an end-to-end autonomous vehicle system using computer vision, pathfinding algorithms, and embedded systems, focusing on real-time decision-making, safety, and ethical design.',
+    image: car,
+    tags: [
+      'Python',
+      'Machine Learning',
+      'Computer Vision',
+      'TensorFlow Lite',
+      'Edge AI',
+      'Raspberry Pi',
+      'Coral TPU',
+      'Pathfinding (Dijkstra)',
+      'Embedded Systems',
+      'Real-Time Systems'
+    ],
+    links: [
       { label: 'GitHub', href: 'https://github.com/alhu45/TTC-Alert' },
     ],
   },
