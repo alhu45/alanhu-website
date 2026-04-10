@@ -7,7 +7,7 @@ import pacman from '../assets/pacman.png'
 import excel from '../assets/excel.png'
 import crime from '../assets/TorontoCrime.png'
 import instarecipe from '../assets/InstaRecipe.png'
-import heatmap from '../assets/Heatmap.png'
+import heatmap from '../assets/ridership.png'
 import ttc from '../assets/ttc_msg.png'
 
 const projects = [
