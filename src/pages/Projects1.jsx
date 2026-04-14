@@ -9,7 +9,7 @@ import crime from '../assets/TorontoCrime.png'
 import instarecipe from '../assets/InstaRecipe.png'
 import heatmap from '../assets/ridership.png'
 import ttc from '../assets/ttc_msg.png'
-import vancouver from '../assets/Vancouver_neighbourhoods.jpg'
+import vancouver from '../assets/vanweblive.png'
 import car from '../assets/car.png'
 
 const projects = [
@@ -20,7 +20,7 @@ const projects = [
     image: vancouver,
     tags: ['Python', 'dbt', 'ML Models', 'ELT Pipeline', 'SQL', 'Snowflake', 'Databricks', 'Terraform', 'Data Warehousing & Modeling', 'AWS S3/EC2', 'Medallion Architecture', 'Geospatial Analysis'],
     links: [
-      { label: 'Demo Website', href: 'https://github.com/alhu45/Vancouver-Housing' },
+      { label: 'Demo Website', href: 'https://vancouverlivability.streamlit.app' },
       { label: 'GitHub', href: 'https://github.com/alhu45/Vancouver-Housing' },
     ],
   },
