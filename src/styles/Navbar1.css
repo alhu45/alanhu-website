@@ -147,6 +147,7 @@ header nav a:hover { color: var(--secondaryColor); }
 .nav-drawer.open a:nth-child(2) { opacity: 1; transform: translateX(0); transition-delay: 0.08s; }
 .nav-drawer.open a:nth-child(3) { opacity: 1; transform: translateX(0); transition-delay: 0.15s; }
 .nav-drawer.open a:nth-child(4) { opacity: 1; transform: translateX(0); transition-delay: 0.22s; }
+.nav-drawer.open a:nth-child(5) { opacity: 1; transform: translateX(0); transition-delay: 0.29s; }
 
 /* Close button */
 .close-btn {

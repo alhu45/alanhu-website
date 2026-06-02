@@ -53,6 +53,7 @@ function Navbar() {
         <Link to="/" onClick={closeNav}>Home</Link>
         <Link to="/about" onClick={closeNav}>Experience</Link>
         <Link to="/projects" onClick={closeNav}>Projects</Link>
+        <Link to="/travel" onClick={closeNav}>Travels</Link>
       </div>
 
       <header className={scrolled ? 'scrolled' : ''}>
@@ -60,6 +61,7 @@ function Navbar() {
           <Link to="/">Home</Link>
           <Link to="/about">Experience</Link>
           <Link to="/projects">Projects</Link>
+          <Link to="/travel">Travels</Link> 
         </nav>
         <button className="hamburger" onClick={openNav} aria-label="Open navigation">
           <FaBars />
