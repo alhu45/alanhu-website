@@ -23,7 +23,7 @@ function App() {
   return (
     <>  
       <div className = "main">
-      <img className = "background-image" src = {background}/>
+      {/* <img className = "background-image" src = {background}/> */}
       <Navbar />
         <div className = "content">
             <h1 className = "font-3">

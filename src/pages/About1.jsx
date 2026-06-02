@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar1.jsx'
 import me from '../assets/mountains.png'
 import Speer from '../assets/Speer.jpeg';
 import Hydro from '../assets/hydro.png';
+import Jonas from '../assets/jonas.png';
 import '../styles/About1.css'
 import { Link } from 'react-router-dom';
 
@@ -48,17 +49,24 @@ function About() {
 
   const experiences = [
     {
+      logo: Jonas,
+      alt: 'Jonas Software',
+      company: 'Jonas Software',
+      role: 'ML Data Engineer Intern',
+      period: 'May 2026 – Present',
+    },
+    {
       logo: Hydro,
       alt: 'Hydro One',
       company: 'Hydro One',
       role: 'Data Engineer Co-Op',
-      period: 'May 2025 – Present',
+      period: 'May 2025 – April 2026',
     },
     {
       logo: Speer,
       alt: 'Speer Technologies',
       company: 'Speer Technologies',
-      role: 'AI Full-Stack Engineer Intern',
+      role: 'Full-Stack Engineer Intern',
       period: 'June 2024 – Sept 2024',
     },
   ];
