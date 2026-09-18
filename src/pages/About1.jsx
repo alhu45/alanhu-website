@@ -3,7 +3,8 @@ import Navbar from '../components/Navbar1.jsx'
 import me from '../assets/mountains.png'
 import Speer from '../assets/Speer.jpeg';
 import Hydro from '../assets/hydro.png';
-import Jonas from '../assets/jonas.png';
+import CSU from '../assets/csu.png';
+import LEO from '../assets/leonardo.jpeg';
 import '../styles/About1.css'
 import { Link } from 'react-router-dom';
 
@@ -48,12 +49,19 @@ function About() {
   }, []);
 
   const experiences = [
+      {
+      logo: LEO,
+      alt: 'Constellation Software',
+      company: 'Constellation Software (Leonardo Worldwide)',
+      role: 'Machine Learning Engineer',
+      period: 'Sept 2026 – Present',
+    },
     {
-      logo: Jonas,
-      alt: 'Jonas Software',
-      company: 'Jonas Software',
+      logo: CSU,
+      alt: 'Constellation Software',
+      company: 'Constellation Software',
       role: 'ML Data Engineer Intern',
-      period: 'May 2026 – Present',
+      period: 'May 2026 – Aug 2026',
     },
     {
       logo: Hydro,
@@ -66,7 +74,7 @@ function About() {
       logo: Speer,
       alt: 'Speer Technologies',
       company: 'Speer Technologies',
-      role: 'Full-Stack Engineer Intern',
+      role: 'Software Engineer Intern',
       period: 'June 2024 – Sept 2024',
     },
   ];
